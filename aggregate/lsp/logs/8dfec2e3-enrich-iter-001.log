@@ -1,0 +1,17 @@
+[2026-09-17T11:16:36Z] === ENRICH ITERATION 1 START | repo=Thinkmill/manypkg sha=8dfec2e3 ===
+[2026-09-17T11:16:36Z] [iter=1] PHASE START: enrich repo=Thinkmill/manypkg sha=8dfec2e3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8dfec2e3-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8dfec2e3e0b0cbeca7aca14d162a53faf939d475.nq.gz
+[2026-09-17T11:16:56Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
+[2026-09-17T11:16:56Z] [iter=1] AST store loaded triples=122111 load_secs=1 mem_mb=273 MB
+[2026-09-17T11:16:56Z] [iter=1] Step 2: Finding LSP targets mem_mb=273 MB
+[2026-09-17T11:16:56Z] [iter=1] LSP targets found call_sites=1017 imports=0 extends=9 implements=0 secs=0
+[2026-09-17T11:16:56Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=273 MB
+[2026-09-17T11:16:57Z] [iter=1] Position index built positions=8261 nodes_with_types=9678 secs=0 mem_mb=273 MB
+[2026-09-17T11:16:57Z] [iter=1] Step 3: Starting LSP resolution mem_mb=273 MB already_completed_types=[] already_completed_files=0
+[2026-09-17T11:16:57Z] [iter=1] Resolving target type target_type=call_site count=1017
+[2026-09-17T11:17:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=9 resolved=66 errors=254 current=packages/cli/src/checks/UNSORTED_DEPENDENCIES.ts
+[2026-09-17T11:17:13Z] [iter=1] Target type resolved target_type=call_site resolved=184 errors=499 secs=16 mem_mb=273 MB
+[2026-09-17T11:17:13Z] [iter=1] Resolving target type target_type=extends_clause count=9
+[2026-09-17T11:17:14Z] [iter=1] Target type resolved target_type=extends_clause resolved=9 errors=0 secs=1 mem_mb=273 MB
+[2026-09-17T11:17:17Z] [iter=1] Step 5: Writing final enrichment file triples=9228
+[2026-09-17T11:17:17Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/8dfec2e3e0b0cbeca7aca14d162a53faf939d475.nq.gz size_kb=162
+[2026-09-17T11:17:17Z] [iter=1] PHASE END: enrich elapsed_s=41 elapsed_min=0.7 total_triples=9228
